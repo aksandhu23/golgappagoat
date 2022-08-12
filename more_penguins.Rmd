@@ -1,0 +1,31 @@
+---
+title: "Untitled"
+author: "Amritpal Sandhu"
+date: "2022-08-12"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+```
+
+```{r}
+penguins_year_character <- penguins |>
+  mutate(year = as.character(year))
+
+class(penguins_year_character$year)
+
+penguins_year_numeric <- penguins_year_character |>
+  mutate(year = as.numeric(year))
+
+class(penguins_year_numeric$year)
+
+penguins_ad_chin <- penguins_year_numeric |>
+  filter(species %in% c("Adelie", "Chinstrap"))
+```
+

@@ -13,3 +13,4 @@
 pencil <- function(lead, tree, paint) {
   (lead + tree) / paint
 }
+
