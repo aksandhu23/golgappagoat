@@ -14,4 +14,4 @@ snacks <- function(grapes, apples, burritos) {
   (grapes + apples) / burritos
 }
 
-# Run devtools::document() and then go over to Build and click Install and Restart, next check the funtion so in this case I entered: golgappagoat::snacks(grapes = 10, apples = 1, burritos = 3)
+# Run devtools::document() and then go over to Build and click Install and Restart, next check the function so in this case I entered: golgappagoat::snacks(grapes = 10, apples = 1, burritos = 3)
